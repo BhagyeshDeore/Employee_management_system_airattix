@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegisterationComponent } from './registeration/registeration.component';
-import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { LoginComponent } from './login/login.component';
 import { ManagerComponent } from './manager/manager.component';
@@ -12,6 +11,9 @@ import { ApplicationForLeaveComponent } from './application-for-leave/applicatio
 const routes: Routes = [
   {
     path: "",component : LoginComponent
+  },
+  {
+    path: "login",component : LoginComponent
   },
   {
     path: "admin-dashboard",component : UserListComponent

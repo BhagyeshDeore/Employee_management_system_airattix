@@ -1,1 +1,44 @@
-<p>application-for-leave works!</p>
+<div class="container">
+<form [formGroup]="leaveForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" style="width: 50%">
+      <mat-label>Leave Type</mat-label>
+      <mat-select id="leaveType" formControlName="leaveType">
+        <mat-option value="Casual Leave">Casual Leave</mat-option>
+        <mat-option value="Sick Leave">Sick Leave</mat-option>
+      </mat-select>
+      <mat-error *ngIf="leaveForm.get('leaveType')?.invalid && leaveForm.get('leaveType')?.touched">
+        Leave Type is required
+      </mat-error>
+    </mat-form-field>
+  <br>
+    <mat-form-field appearance="fill" style="width: 50%">
+      <mat-label>Start Date</mat-label>
+      <input matInput [matDatepicker]="startDatePicker" formControlName="startDate" id="startDate">
+      <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #startDatePicker></mat-datepicker>
+      <mat-error *ngIf="leaveForm.get('startDate')?.invalid && leaveForm.get('startDate')?.touched">
+        Start Date is required
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" style="width: 50%">
+      <mat-label>End Date</mat-label>
+      <input matInput [matDatepicker]="endDatePicker" formControlName="endDate" id="endDate">
+      <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+      <mat-datepicker #endDatePicker></mat-datepicker>
+      <mat-error *ngIf="leaveForm.get('endDate')?.invalid && leaveForm.get('endDate')?.touched">
+        End Date is required
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill" style="width: 50%">
+      <mat-label>Reason</mat-label>
+      <textarea matInput formControlName="reason" id="reason"></textarea>
+      <mat-error *ngIf="leaveForm.get('reason')?.invalid && leaveForm.get('reason')?.touched">
+        Reason is required
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit" [disabled]="leaveForm.invalid">Submit</button>
+  </form>
+</div>

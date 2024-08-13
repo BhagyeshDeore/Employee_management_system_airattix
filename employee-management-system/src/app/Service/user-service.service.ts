@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { User } from '../User';
+import { LeaveDetail, User } from '../User';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,7 @@ import { User } from '../User';
 export class UserServiceService {
 
   private apiUrl = 'http://localhost:3000/users';
+  private leaveDetailsApiUrl = 'http://localhost:3000/leaveDetails';
 
   constructor(private http: HttpClient) {}
 
@@ -27,6 +28,17 @@ export class UserServiceService {
   }
   deleteUser(id: string): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
+  }
+  submitLeaveApplication(leaveData: LeaveDetail): Observable<LeaveDetail> {
+    return this.http.post<LeaveDetail>(this.leaveDetailsApiUrl, leaveData);
+  }
+
+  getLeaveApplications(): Observable<LeaveDetail[]> {
+    return this.http.get<LeaveDetail[]>(this.leaveDetailsApiUrl);
+  }
+
+  getLeaveApplication(id: string): Observable<LeaveDetail> {
+    return this.http.get<LeaveDetail>(`${this.leaveDetailsApiUrl}/${id}`);
   }
   
 }

@@ -31,6 +31,192 @@
       "password": "Nitish@123",
       "role": "Admin",
       "status": "Active"
+    },
+    {
+      "id": "682e",
+      "name": "admin1",
+      "email": "admin1@gmail.com",
+      "password": "Bhagyesh@123",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "a001",
+      "name": "Aarav Sharma",
+      "email": "aarav.sharma@gmail.com",
+      "password": "Aarav@123",
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": "a002",
+      "name": "Saanvi Patel",
+      "email": "saanvi.patel@gmail.com",
+      "password": "Saanvi@123",
+      "role": "Manager",
+      "status": "Inactive"
+    },
+    {
+      "id": "a003",
+      "name": "Rohan Gupta",
+      "email": "rohan.gupta@gmail.com",
+      "password": "Rohan@123",
+      "role": "Team Lead",
+      "status": "Active"
+    },
+    {
+      "id": "a004",
+      "name": "Ananya Rao",
+      "email": "ananya.rao@gmail.com",
+      "password": "Ananya@123",
+      "role": "Engineer",
+      "status": "Active"
+    },
+    {
+      "id": "a005",
+      "name": "Vikram Singh",
+      "email": "vikram.singh@gmail.com",
+      "password": "Vikram@123",
+      "role": "Admin",
+      "status": "Inactive"
+    },
+    {
+      "id": "a006",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@gmail.com",
+      "password": "Priya@123",
+      "role": "Engineer",
+      "status": "Active"
+    },
+    {
+      "id": "a007",
+      "name": "Arjun Mehta",
+      "email": "arjun.mehta@gmail.com",
+      "password": "Arjun@123",
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": "a008",
+      "name": "Pooja Agarwal",
+      "email": "pooja.agarwal@gmail.com",
+      "password": "Pooja@123",
+      "role": "Team Lead",
+      "status": "Inactive"
+    },
+    {
+      "id": "a009",
+      "name": "Kiran Desai",
+      "email": "kiran.desai@gmail.com",
+      "password": "Kiran@123",
+      "role": "Engineer",
+      "status": "Active"
+    },
+    {
+      "id": "a010",
+      "name": "Siddharth Patel",
+      "email": "siddharth.patel@gmail.com",
+      "password": "Siddharth@123",
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": "a011",
+      "name": "Meera Joshi",
+      "email": "meera.joshi@gmail.com",
+      "password": "Meera@123",
+      "role": "Admin",
+      "status": "Inactive"
+    },
+    {
+      "id": "a012",
+      "name": "Ravi Kumar",
+      "email": "ravi.kumar@gmail.com",
+      "password": "Ravi@123",
+      "role": "Team Lead",
+      "status": "Active"
+    },
+    {
+      "id": "a013",
+      "name": "Naina Kapoor",
+      "email": "naina.kapoor@gmail.com",
+      "password": "Naina@123",
+      "role": "Engineer",
+      "status": "Inactive"
+    },
+    {
+      "id": "a014",
+      "name": "Rakesh Patel",
+      "email": "rakesh.patel@gmail.com",
+      "password": "Rakesh@123",
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": "a015",
+      "name": "Neha Verma",
+      "email": "neha.verma@gmail.com",
+      "password": "Neha@123",
+      "role": "Team Lead",
+      "status": "Inactive"
+    },
+    {
+      "id": "a016",
+      "name": "Sanjay Mehta",
+      "email": "sanjay.mehta@gmail.com",
+      "password": "Sanjay@123",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": "a017",
+      "name": "Swati Shah",
+      "email": "swati.shah@gmail.com",
+      "password": "Swati@123",
+      "role": "Manager",
+      "status": "Inactive"
+    },
+    {
+      "id": "a018",
+      "name": "Amitabh Choudhury",
+      "email": "amitabh.choudhury@gmail.com",
+      "password": "Amitabh@123",
+      "role": "Engineer",
+      "status": "Active"
+    },
+    {
+      "id": "a019",
+      "name": "Riya Joshi",
+      "email": "riya.joshi@gmail.com",
+      "password": "Riya@123",
+      "role": "Team Lead",
+      "status": "Active"
+    },
+    {
+      "id": "a020",
+      "name": "Tarun Sharma",
+      "email": "tarun.sharma@gmail.com",
+      "password": "Tarun@123",
+      "role": "Engineer",
+      "status": "Inactive"
+    }
+  ],
+  "leaveDetails": [
+    {
+      "id": "",
+      "leaveType": "Sick Leave",
+      "startDate": "2024-08-14T18:30:00.000Z",
+      "endDate": "2024-09-30T18:30:00.000Z",
+      "reason": "Medical Emergency",
+      "status": "Pending"
+    },
+    {
+      "id": "f8a7",
+      "leaveType": "Sick Leave",
+      "startDate": "2024-08-15T18:30:00.000Z",
+      "endDate": "2024-08-22T18:30:00.000Z",
+      "reason": "XXx",
+      "status": "Pending"
     }
   ]
 }

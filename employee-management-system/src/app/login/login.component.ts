@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserServiceService } from '../Service/user-service.service';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { LoginService } from '../Service/login.service';  // Import LoginService
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,11 @@ export class LoginComponent {
 
   roles: string[] = ['Admin', 'Engineer', 'Team Lead', 'Manager'];
 
-  constructor(private userService: UserServiceService, private router: Router) {}
+  constructor(
+    private userService: UserServiceService,
+    private router: Router,
+    private loginService: LoginService  // Inject LoginService
+  ) {}
 
   onLogin(): void {
     if (this.loginForm.valid) {
@@ -28,8 +33,11 @@ export class LoginComponent {
 
         if (user) {
           if (user.status === 'Active') {
-            
             localStorage.setItem('user', JSON.stringify(user));
+            console.log("executed---- localStorage.setItem('user', JSON.stringify(user));", JSON.stringify(user));
+
+            
+            this.loginService.setUserRole(user.role);
 
             if (user.role === 'Admin') {
               this.router.navigate(['/admin-dashboard']);

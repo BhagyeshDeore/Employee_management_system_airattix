@@ -22,10 +22,9 @@ import { EngineerComponent } from './engineer/engineer.component';
 import { TeamleadComponent } from './teamlead/teamlead.component';
 import { ManagerComponent } from './manager/manager.component';
 import { ApplicationForLeaveComponent } from './application-for-leave/application-for-leave.component';
-import { ManagerNavbarComponent } from './manager-navbar/manager-navbar.component';
-import { EngineerNavbarComponent } from './engineer-navbar/engineer-navbar.component';
-import { TeamLeadNavbarComponent } from './team-lead-navbar/team-lead-navbar.component';
-import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 
 @NgModule({
   declarations: [
@@ -39,10 +38,6 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
     TeamleadComponent,
     ManagerComponent,
     ApplicationForLeaveComponent,
-    ManagerNavbarComponent,
-    EngineerNavbarComponent,
-    TeamLeadNavbarComponent,
-    AdminNavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -58,6 +53,8 @@ import { AdminNavbarComponent } from './admin-navbar/admin-navbar.component';
     MatIconModule,
     ReactiveFormsModule,
     MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

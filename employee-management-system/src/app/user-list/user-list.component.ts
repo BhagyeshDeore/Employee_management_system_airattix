@@ -34,7 +34,6 @@ export class UserListComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        // Send the updated user data excluding status
         this.userService.updateUser(user.id!, { ...result }).subscribe(() => {
           this.loadUsers();
         });
