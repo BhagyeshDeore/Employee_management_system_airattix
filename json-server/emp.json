@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "51e1",
+      "name": "Bhagyesh B. Deore",
+      "email": "bhagyesh@gmail.com",
+      "password": "Bhagyesh@123",
+      "role": "Team Lead",
+      "status": "Active"
+    },
+    {
+      "id": "5b99",
+      "name": "Bhagyesh Bhaiyasaheb Deore",
+      "email": "bhagyeshdeore123@gmail.com",
+      "password": "Bhagyesh@123",
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": "ee84",
+      "name": "test",
+      "email": "test@gmail.com",
+      "password": "Test@123",
+      "role": "Engineer",
+      "status": "Inactive"
+    },
+    {
+      "id": "2fdb",
+      "name": "Nitish Kumar",
+      "email": "nitishkumar@gmail.com",
+      "password": "Nitish@123",
+      "role": "Admin",
+      "status": "Active"
+    }
+  ]
+}

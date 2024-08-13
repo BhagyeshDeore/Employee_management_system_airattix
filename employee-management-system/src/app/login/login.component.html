@@ -1,0 +1,30 @@
+<div class="container">
+    
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+        <div id="heading">Login</div>
+      <mat-form-field appearance="fill" style="width: 50%">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" placeholder="Enter your email" required>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('required')">Email is required.</mat-error>
+        <mat-error *ngIf="loginForm.get('email')?.hasError('email')">Please enter a valid email.</mat-error>
+      </mat-form-field>
+    <br>
+      <mat-form-field appearance="fill" style="width: 50%">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password" placeholder="Enter your password" required>
+        <mat-error *ngIf="loginForm.get('password')?.hasError('required')">Password is required.</mat-error>
+      </mat-form-field>
+      <br>
+      <mat-form-field appearance="fill" style="width: 50%">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role" placeholder="Select role" required>
+          <mat-option *ngFor="let role of roles" [value]="role">{{ role }}</mat-option>
+        </mat-select>
+        <mat-error *ngIf="loginForm.get('role')?.hasError('required')">Role is required.</mat-error>
+      </mat-form-field>
+      <br>
+      <button mat-raised-button color="primary" type="submit">Login</button> <br> 
+      <p>Don't Have Account?&nbsp;<a routerLink="/register">Click to Register</a></p>
+    </form>
+  </div>
+  
