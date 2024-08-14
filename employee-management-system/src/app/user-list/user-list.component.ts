@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { UserServiceService } from '../Service/user-service.service';
 import { User } from '../User';
 import { UpdateUserComponent } from '../update-user/update-user.component';
+import { LeaveDetailsDialogComponent } from '../leave-details-dialog/leave-details-dialog.component';
 
 @Component({
   selector: 'app-user-list',
@@ -12,7 +13,7 @@ import { UpdateUserComponent } from '../update-user/update-user.component';
 export class UserListComponent implements OnInit {
 
   users: User[] = [];
-  displayedColumns: string[] = ['id', 'name', 'email', 'role', 'status', 'update', 'remove', 'actions'];
+  displayedColumns: string[] = ['id', 'name', 'email', 'role', 'status', 'update', 'remove', 'actions', 'leaveDetails'];
 
   constructor(private userService: UserServiceService, public dialog: MatDialog) {}
 
@@ -56,4 +57,12 @@ export class UserListComponent implements OnInit {
       this.loadUsers(); 
     });
   }
+
+  openLeaveDetails(userId: string): void {
+    this.dialog.open(LeaveDetailsDialogComponent, {
+      width: '600px',
+      data: userId
+    });
+  }
+  
 }

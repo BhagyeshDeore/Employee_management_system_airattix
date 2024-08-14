@@ -1,5 +1,7 @@
 export interface LeaveDetail {
   id?: string;
+  userId : string;
+  userName : string;
   leaveType: 'Casual Leave' | 'Sick Leave';
   startDate: string;
   endDate: string;

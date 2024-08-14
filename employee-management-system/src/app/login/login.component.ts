@@ -21,7 +21,7 @@ export class LoginComponent {
   constructor(
     private userService: UserServiceService,
     private router: Router,
-    private loginService: LoginService  // Inject LoginService
+    private loginService: LoginService 
   ) {}
 
   onLogin(): void {

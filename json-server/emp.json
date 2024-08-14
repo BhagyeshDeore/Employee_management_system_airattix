@@ -203,20 +203,24 @@
   ],
   "leaveDetails": [
     {
-      "id": "",
+      "id": "0857",
       "leaveType": "Sick Leave",
-      "startDate": "2024-08-14T18:30:00.000Z",
-      "endDate": "2024-09-30T18:30:00.000Z",
-      "reason": "Medical Emergency",
-      "status": "Pending"
+      "startDate": "2024-08-22T18:30:00.000Z",
+      "endDate": "2024-08-29T18:30:00.000Z",
+      "reason": "test",
+      "status": "Approved",
+      "userId": "5b99",
+      "userName": "Bhagyesh Bhaiyasaheb Deore"
     },
     {
-      "id": "f8a7",
-      "leaveType": "Sick Leave",
-      "startDate": "2024-08-15T18:30:00.000Z",
-      "endDate": "2024-08-22T18:30:00.000Z",
-      "reason": "XXx",
-      "status": "Pending"
+      "id": "4799",
+      "leaveType": "Casual Leave",
+      "startDate": "2024-08-13T18:30:00.000Z",
+      "endDate": "2024-08-13T18:30:00.000Z",
+      "reason": "test",
+      "status": "Approved",
+      "userId": "5b99",
+      "userName": "Bhagyesh Bhaiyasaheb Deore"
     }
   ]
 }

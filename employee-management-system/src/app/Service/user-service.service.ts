@@ -4,10 +4,9 @@ import { Observable } from 'rxjs';
 import { LeaveDetail, User } from '../User';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserServiceService {
-
   private apiUrl = 'http://localhost:3000/users';
   private leaveDetailsApiUrl = 'http://localhost:3000/leaveDetails';
 
@@ -40,5 +39,11 @@ export class UserServiceService {
   getLeaveApplication(id: string): Observable<LeaveDetail> {
     return this.http.get<LeaveDetail>(`${this.leaveDetailsApiUrl}/${id}`);
   }
-  
+  getLeaveDetailsByUserId(userId: string): Observable<any[]> {
+    return this.http.get<any[]>(`${this.leaveDetailsApiUrl}?userId=${userId}`);
+  }
+
+  updateLeaveStatus(leaveDetailId: string, status: string): Observable<any> {
+    return this.http.patch(`${this.leaveDetailsApiUrl}/${leaveDetailId}`, { status });
+  }
 }

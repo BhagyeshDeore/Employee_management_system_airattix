@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>Leave Details</h2>
+<mat-dialog-content>
+  <div *ngIf="leaveDetails.length === 0">
+    <p>No leave details available for this user.</p>
+    <br>
+  </div>
+  <div *ngIf="leaveDetails.length > 0">
+    <div *ngFor="let detail of leaveDetails">
+      <p><strong>Leave Type:</strong> {{ detail.leaveType }}</p>
+      <p><strong>Start Date:</strong> {{ detail.startDate | date }}</p>
+      <p><strong>End Date:</strong> {{ detail.endDate | date }}</p>
+      <p><strong>Reason:</strong> {{ detail.reason }}</p>
+      <p><strong>Status:</strong> {{ detail.status }}</p>
+      <mat-dialog-actions>
+        <button mat-button (click)="updateStatus(detail.id, 'Pending')">Pending</button>
+        <button mat-button (click)="updateStatus(detail.id, 'Approved')">Approve</button>
+        <button mat-button (click)="updateStatus(detail.id, 'Rejected')">Reject</button>
+      </mat-dialog-actions>
+      <br>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

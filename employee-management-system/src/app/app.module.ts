@@ -24,6 +24,7 @@ import { ManagerComponent } from './manager/manager.component';
 import { ApplicationForLeaveComponent } from './application-for-leave/application-for-leave.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { LeaveDetailsDialogComponent } from './leave-details-dialog/leave-details-dialog.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     TeamleadComponent,
     ManagerComponent,
     ApplicationForLeaveComponent,
+    LeaveDetailsDialogComponent,
   ],
   imports: [
     BrowserModule,
