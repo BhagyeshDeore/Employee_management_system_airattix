@@ -1,1 +1,62 @@
-<p>engineer works!</p>
+<div class="alert alert-primary text-center" role="alert">
+  <h2>Engineer Dashboard</h2>
+</div>
+<div class="dashboard-container">
+    <div class="profile-section">
+      <h2>Profile Details</h2>
+      <hr><br>
+      <div *ngIf="userProfile">
+        <p><strong>User Id:</strong> {{ userProfile.id }}</p>
+        <p><strong>Name:</strong> {{ userProfile.name }}</p>
+        <p><strong>Email:</strong> {{ userProfile.email }}</p>
+        <p><strong>Role:</strong> {{ userProfile.role }}</p>
+      </div>
+    </div>
+  
+    <div class="leave-section">
+      <h2>Leave Details</h2>
+      <hr>
+      <div *ngIf="leaveDetails.length === 0">
+        <p>No leave details available.</p>
+      </div>
+      <div class="leave-count">
+        <p><strong>Total Casual Leaves:</strong> {{ casualLeaveCount }}</p>
+        <p><strong>Total Sick Leaves:</strong> {{ sickLeaveCount }}</p>
+      </div>
+      <table mat-table [dataSource]="leaveDetails" class="mat-elevation-z8">
+        
+        <ng-container matColumnDef="leaveType">
+          <th mat-header-cell *matHeaderCellDef> Leave Type </th>
+          <td mat-cell *matCellDef="let detail"> {{ detail.leaveType }} </td>
+        </ng-container>
+  
+        
+        <ng-container matColumnDef="startDate">
+          <th mat-header-cell *matHeaderCellDef> Start Date </th>
+          <td mat-cell *matCellDef="let detail"> {{ detail.startDate | date }} </td>
+        </ng-container>
+  
+        
+        <ng-container matColumnDef="endDate">
+          <th mat-header-cell *matHeaderCellDef> End Date </th>
+          <td mat-cell *matCellDef="let detail"> {{ detail.endDate | date }} </td>
+        </ng-container>
+  
+      
+        <ng-container matColumnDef="reason">
+          <th mat-header-cell *matHeaderCellDef> Reason </th>
+          <td mat-cell *matCellDef="let detail"> {{ detail.reason }} </td>
+        </ng-container>
+  
+        
+        <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef> Status </th>
+          <td mat-cell *matCellDef="let detail"> {{ detail.status }} </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+  

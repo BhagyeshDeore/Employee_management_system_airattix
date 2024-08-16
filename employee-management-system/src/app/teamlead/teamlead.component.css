@@ -1,0 +1,30 @@
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .profile-section,
+  .leave-section {
+    width: 65%; 
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  .profile-section{
+    width: 30%;
+  }
+  
+  .leave-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .leave-count {
+    margin-top: 1rem;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  

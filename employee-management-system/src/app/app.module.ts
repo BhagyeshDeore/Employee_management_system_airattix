@@ -25,7 +25,8 @@ import { ApplicationForLeaveComponent } from './application-for-leave/applicatio
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { LeaveDetailsDialogComponent } from './leave-details-dialog/leave-details-dialog.component';
-
+import { MatCardModule } from '@angular/material/card';
+import { UnauthorisedComponent } from './unauthorised/unauthorised.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { LeaveDetailsDialogComponent } from './leave-details-dialog/leave-detail
     ManagerComponent,
     ApplicationForLeaveComponent,
     LeaveDetailsDialogComponent,
+    UnauthorisedComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ import { LeaveDetailsDialogComponent } from './leave-details-dialog/leave-detail
     ReactiveFormsModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

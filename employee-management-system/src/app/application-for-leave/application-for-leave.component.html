@@ -1,5 +1,7 @@
 <div class="container">
+  
 <form [formGroup]="leaveForm" (ngSubmit)="onSubmit()">
+  <div class="head">Aplication for Leave</div><br>
     <mat-form-field appearance="fill" style="width: 50%">
       <mat-label>Leave Type</mat-label>
       <mat-select id="leaveType" formControlName="leaveType">

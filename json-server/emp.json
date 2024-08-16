@@ -84,7 +84,7 @@
       "id": "a006",
       "name": "Priya Sharma",
       "email": "priya.sharma@gmail.com",
-      "password": "Priya@123",
+      "password": "Bhagyesh@123",
       "role": "Engineer",
       "status": "Active"
     },
@@ -199,6 +199,14 @@
       "password": "Tarun@123",
       "role": "Engineer",
       "status": "Inactive"
+    },
+    {
+      "id": "9b42",
+      "name": "Piyush Deore",
+      "email": "piyush@gmail.com",
+      "password": "Bhagyesh@123",
+      "role": "Team Lead",
+      "status": "Inactive"
     }
   ],
   "leaveDetails": [
@@ -208,7 +216,7 @@
       "startDate": "2024-08-22T18:30:00.000Z",
       "endDate": "2024-08-29T18:30:00.000Z",
       "reason": "test",
-      "status": "Approved",
+      "status": "Rejected",
       "userId": "5b99",
       "userName": "Bhagyesh Bhaiyasaheb Deore"
     },
@@ -218,6 +226,46 @@
       "startDate": "2024-08-13T18:30:00.000Z",
       "endDate": "2024-08-13T18:30:00.000Z",
       "reason": "test",
+      "status": "Approved",
+      "userId": "5b99",
+      "userName": "Bhagyesh Bhaiyasaheb Deore"
+    },
+    {
+      "id": "c0f2",
+      "leaveType": "Sick Leave",
+      "startDate": "2024-08-15T18:30:00.000Z",
+      "endDate": "2024-08-15T18:30:00.000Z",
+      "reason": "personal work",
+      "status": "Rejected",
+      "userId": "2fdb",
+      "userName": "Nitish Kumar"
+    },
+    {
+      "id": "7655",
+      "leaveType": "Sick Leave",
+      "startDate": "2024-08-15T18:30:00.000Z",
+      "endDate": "2024-09-06T18:30:00.000Z",
+      "reason": "Medical Emergency",
+      "status": "Rejected",
+      "userId": "2fdb",
+      "userName": "Nitish Kumar"
+    },
+    {
+      "id": "df2f",
+      "leaveType": "Sick Leave",
+      "startDate": "2024-08-14T18:30:00.000Z",
+      "endDate": "2024-10-30T18:30:00.000Z",
+      "reason": "meri marzi",
+      "status": "Approved",
+      "userId": "a006",
+      "userName": "Priya Sharma"
+    },
+    {
+      "id": "95ab",
+      "leaveType": "Casual Leave",
+      "startDate": "2024-08-18T18:30:00.000Z",
+      "endDate": "2024-08-18T18:30:00.000Z",
+      "reason": "Personal Work",
       "status": "Approved",
       "userId": "5b99",
       "userName": "Bhagyesh Bhaiyasaheb Deore"
